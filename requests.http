@@ -1,0 +1,148 @@
+# SynapseGate: one-click API requests for VS Code.
+#
+# 1. Install the "REST Client" extension (VS Code will suggest it when you open this folder).
+# 2. Start the server:  npm start
+# 3. Click "Send Request" above any request below. Run them from the top, in order:
+#    later requests use the ticket id returned by the first one.
+#
+# Demo keys (change them with the VIEWER_KEY / AGENT_KEY / ADMIN_KEY environment variables).
+
+@baseUrl = http://localhost:3000/api/v1
+@viewerKey = viewer-key-123
+@agentKey = agent-key-123
+@adminKey = admin-key-123
+
+### ---------------------------------------------------------- Public (no key needed)
+
+### API index
+GET {{baseUrl}}/
+
+### Health (the system pulse)
+GET {{baseUrl}}/health
+
+### Documentation generated from the code, with runnable curl examples
+GET {{baseUrl}}/docs
+
+### ---------------------------------------------------------- Tickets
+
+### 1. Create a ticket (agent). Expect 201, score 90, critical
+# @name createTicket
+POST {{baseUrl}}/tickets
+x-api-key: {{agentKey}}
+Content-Type: application/json
+Idempotency-Key: {{$guid}}
+
+{
+  "email": "asha@example.com",
+  "title": "Checkout page is down #{{$randomInt 100 999}}",
+  "description": "Customers cannot pay, urgent fix needed.",
+  "category": "outage",
+  "affectedUsers": 150
+}
+
+### 2. List tickets (viewer). Try the filters: priority, status, category, assignee, search, overdue, createdFrom, createdTo
+GET {{baseUrl}}/tickets?priority=critical&sort=-score&page=1&limit=10
+x-api-key: {{viewerKey}}
+
+### 3. Search
+GET {{baseUrl}}/tickets?search=checkout
+x-api-key: {{viewerKey}}
+
+### 4. One ticket
+GET {{baseUrl}}/tickets/{{createTicket.response.body.$.data.id}}
+x-api-key: {{viewerKey}}
+
+### 5. Assign it
+PUT {{baseUrl}}/tickets/{{createTicket.response.body.$.data.id}}/assignee
+x-api-key: {{agentKey}}
+Content-Type: application/json
+
+{ "assignee": "Ravi Kumar" }
+
+### 6. Move it forward: in_progress, then resolved (going back returns 400)
+PUT {{baseUrl}}/tickets/{{createTicket.response.body.$.data.id}}/status
+x-api-key: {{agentKey}}
+Content-Type: application/json
+
+{ "status": "in_progress" }
+
+### 7. Add a comment
+POST {{baseUrl}}/tickets/{{createTicket.response.body.$.data.id}}/comments
+x-api-key: {{agentKey}}
+Content-Type: application/json
+
+{ "text": "Payment provider confirmed an outage on their side." }
+
+### 8. List comments
+GET {{baseUrl}}/tickets/{{createTicket.response.body.$.data.id}}/comments
+x-api-key: {{viewerKey}}
+
+### 9. History (audit trail)
+GET {{baseUrl}}/tickets/{{createTicket.response.body.$.data.id}}/history
+x-api-key: {{viewerKey}}
+
+### 10. Override the priority (admin only, reason required)
+PUT {{baseUrl}}/tickets/{{createTicket.response.body.$.data.id}}/priority
+x-api-key: {{adminKey}}
+Content-Type: application/json
+
+{ "priority": "high", "reason": "Impact is smaller than first reported" }
+
+### 11. Statistics
+GET {{baseUrl}}/stats
+x-api-key: {{viewerKey}}
+
+### ---------------------------------------------------------- Admin
+
+### Metrics: latency, availability, errors (admin)
+GET {{baseUrl}}/metrics
+x-api-key: {{adminKey}}
+
+### Recent API requests (admin)
+GET {{baseUrl}}/admin/logs?limit=20
+x-api-key: {{adminKey}}
+
+### Notifier status (admin)
+GET {{baseUrl}}/admin/notifier
+x-api-key: {{adminKey}}
+
+### Failure simulator: make the notifier fail (then create 4 critical tickets and watch the circuit open)
+PUT {{baseUrl}}/admin/notifier
+x-api-key: {{adminKey}}
+Content-Type: application/json
+
+{ "mode": "failing" }
+
+### Failure simulator: make it healthy again
+PUT {{baseUrl}}/admin/notifier
+x-api-key: {{adminKey}}
+Content-Type: application/json
+
+{ "mode": "healthy" }
+
+### Delete the ticket (admin only; an agent key returns 403)
+DELETE {{baseUrl}}/tickets/{{createTicket.response.body.$.data.id}}
+x-api-key: {{adminKey}}
+
+### ---------------------------------------------------------- Errors on purpose
+
+### 401: no API key
+GET {{baseUrl}}/tickets
+
+### 400: the Gatekeeper rejects a bad ticket and explains every problem
+POST {{baseUrl}}/tickets
+x-api-key: {{agentKey}}
+Content-Type: application/json
+
+{ "title": "ab", "category": "nonsense", "extra": true }
+
+### 403: a viewer cannot create tickets
+POST {{baseUrl}}/tickets
+x-api-key: {{viewerKey}}
+Content-Type: application/json
+
+{ "email": "a@b.co", "title": "Viewer tries to write", "description": "This must be refused.", "category": "bug" }
+
+### 404: unknown ticket
+GET {{baseUrl}}/tickets/tkt_9999
+x-api-key: {{viewerKey}}

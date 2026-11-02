@@ -1,0 +1,556 @@
+{
+  "info": {
+    "name": "SynapseGate API",
+    "description": "Generated from the route registry. Set the collection variables, then run the requests in order.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    },
+    {
+      "key": "viewerKey",
+      "value": "viewer-key-123"
+    },
+    {
+      "key": "agentKey",
+      "value": "agent-key-123"
+    },
+    {
+      "key": "adminKey",
+      "value": "admin-key-123"
+    }
+  ],
+  "item": [
+    {
+      "name": "GET /  (public)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /tickets  (agent+)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{agentKey}}"
+          },
+          {
+            "key": "Idempotency-Key",
+            "value": "checkout-outage-001"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"asha@example.com\",\n  \"title\": \"Checkout page is down\",\n  \"description\": \"Customers cannot pay, urgent fix needed.\",\n  \"category\": \"outage\",\n  \"affectedUsers\": 150\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GET /tickets  (viewer+)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{viewerKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets?priority=critical&status=open&search=checkout&sort=-score&page=1&limit=10",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets"
+          ],
+          "query": [
+            {
+              "key": "priority",
+              "value": "critical"
+            },
+            {
+              "key": "status",
+              "value": "open"
+            },
+            {
+              "key": "search",
+              "value": "checkout"
+            },
+            {
+              "key": "sort",
+              "value": "-score"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /tickets/:id  (viewer+)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{viewerKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets/tkt_0001",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets",
+            "tkt_0001"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT /tickets/:id/status  (agent+)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{agentKey}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets/tkt_0001/status",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets",
+            "tkt_0001",
+            "status"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"in_progress\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PUT /tickets/:id/assignee  (agent+)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{agentKey}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets/tkt_0001/assignee",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets",
+            "tkt_0001",
+            "assignee"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"assignee\": \"Ravi Kumar\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PUT /tickets/:id/priority  (admin+)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{adminKey}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets/tkt_0001/priority",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets",
+            "tkt_0001",
+            "priority"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"priority\": \"high\",\n  \"reason\": \"Impact is smaller than first reported\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "POST /tickets/:id/comments  (agent+)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{agentKey}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets/tkt_0001/comments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets",
+            "tkt_0001",
+            "comments"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"text\": \"Payment provider confirmed an outage on their side.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GET /tickets/:id/comments  (viewer+)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{viewerKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets/tkt_0001/comments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets",
+            "tkt_0001",
+            "comments"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /tickets/:id/history  (viewer+)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{viewerKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets/tkt_0001/history",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets",
+            "tkt_0001",
+            "history"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /tickets/:id  (admin+)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{adminKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/tickets/tkt_0001",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tickets",
+            "tkt_0001"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /stats  (viewer+)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{viewerKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/stats",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "stats"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /health  (public)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "health"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /metrics  (admin+)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{adminKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/metrics",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "metrics"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /docs  (public)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/docs",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "docs"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /admin/notifier  (admin+)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{adminKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/admin/notifier",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "notifier"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT /admin/notifier  (admin+)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{adminKey}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/admin/notifier",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "notifier"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"mode\": \"failing\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GET /admin/logs  (admin+)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{adminKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/admin/logs?limit=20",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "logs"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "20"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

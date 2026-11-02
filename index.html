@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SynapseGate Dashboard</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo">&#9889;</span>
+    <div><h1>SynapseGate</h1><small>Self-healing incident triage gateway</small></div>
+  </div>
+  <div class="top-right">
+    <span id="healthPill" class="pill">checking&hellip;</span>
+    <label>Role
+      <select id="roleSelect">
+        <option value="admin">Admin</option>
+        <option value="agent">Agent</option>
+        <option value="viewer">Viewer</option>
+      </select>
+    </label>
+    <label>API key <input id="keyInput" type="text" autocomplete="off" spellcheck="false"></label>
+    <label><input id="autoRefresh" type="checkbox" checked> auto-refresh</label>
+    <a href="/api/v1/docs" target="_blank" rel="noopener">API docs</a>
+  </div>
+</header>
+
+<main>
+  <section id="statsRow" class="cards"></section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Create a ticket</h2>
+      <form id="createForm" novalidate>
+        <div class="row">
+          <label class="f">Email<input id="fEmail" type="email" value="asha@example.com"></label>
+          <label class="f">Category
+            <select id="fCategory">
+              <option>outage</option><option>security</option><option>billing</option><option>bug</option><option>general</option>
+            </select>
+          </label>
+        </div>
+        <label class="f">Title (5-100 characters)<input id="fTitle" type="text"></label>
+        <label class="f">Description (10-1000 characters)<textarea id="fDesc"></textarea></label>
+        <label class="f">Affected users (optional, required for security)<input id="fUsers" type="number" min="1" max="100000"></label>
+        <div class="btns">
+          <button type="submit">Create ticket</button>
+          <button type="button" class="ghost" id="fillExample">Fill example</button>
+        </div>
+      </form>
+      <div id="createResult"></div>
+    </section>
+
+    <section class="card">
+      <h2>Resilience &amp; vital signs</h2>
+      <div id="opsBody"><p class="muted">Loading&hellip;</p></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Tickets</h2>
+    <div class="filters">
+      <input id="qSearch" type="search" placeholder="Search title or description">
+      <select id="qPriority"><option value="">All priorities</option><option>critical</option><option>high</option><option>medium</option><option>low</option></select>
+      <select id="qStatus"><option value="">All statuses</option><option>open</option><option>in_progress</option><option>resolved</option></select>
+      <select id="qCategory"><option value="">All categories</option><option>security</option><option>outage</option><option>billing</option><option>bug</option><option>general</option></select>
+      <input id="qAssignee" type="text" placeholder="Assignee (or unassigned)" size="18">
+      <select id="qOverdue"><option value="">SLA: any</option><option value="true">Overdue only</option><option value="false">Not overdue</option></select>
+      <select id="qSort">
+        <option value="-createdAt">Newest first</option><option value="createdAt">Oldest first</option>
+        <option value="-score">Highest score</option><option value="score">Lowest score</option>
+        <option value="slaDueAt">SLA due soonest</option>
+      </select>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>ID</th><th>Title</th><th>Priority</th><th>Score</th><th>Status</th><th>Assignee</th><th>SLA</th><th>Notify</th></tr></thead>
+        <tbody id="ticketRows"><tr><td colspan="8" class="muted">Loading&hellip;</td></tr></tbody>
+      </table>
+    </div>
+    <div class="pager" id="pager"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Recent API requests</h2>
+      <div id="logBody" class="log"><span class="muted">Admin role only.</span></div>
+    </section>
+
+    <section class="card">
+      <h2>API self-check</h2>
+      <p class="muted">Calls every part of the API end to end and reports pass or fail. It creates two test tickets and deletes them at the end (needs the admin key).</p>
+      <div class="keys">
+        <label class="f">Viewer key<input id="kViewer" type="text" autocomplete="off" spellcheck="false"></label>
+        <label class="f">Agent key<input id="kAgent" type="text" autocomplete="off" spellcheck="false"></label>
+        <label class="f">Admin key<input id="kAdmin" type="text" autocomplete="off" spellcheck="false"></label>
+      </div>
+      <div class="btns"><button id="runCheck">Run self-check</button></div>
+      <div id="checkSummary"></div>
+      <div id="checkResults"></div>
+    </section>
+  </div>
+</main>
+
+<dialog id="detail"></dialog>
+<div id="toasts"></div>
+<script src="/assets/selfcheck.js"></script>
+<script src="/assets/dashboard.js"></script>
+</body>
+</html>

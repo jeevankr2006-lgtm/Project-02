@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Start server", "type": "npm", "script": "start", "problemMatcher": [] },
+    { "label": "Start server (auto-restart)", "type": "npm", "script": "dev", "problemMatcher": [] },
+    { "label": "Run tests", "type": "npm", "script": "test", "group": "test", "problemMatcher": [] },
+    { "label": "API self-check (server must be running)", "type": "npm", "script": "check", "problemMatcher": [] },
+    { "label": "Guided demo (server must be running)", "type": "npm", "script": "demo", "problemMatcher": [] }
+  ]
+}

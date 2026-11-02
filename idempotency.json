@@ -1,0 +1,706 @@
+{
+  "entries": {
+    "2a2835102815b7c9b2dc0c950573560f500d9a292b3a60eb2439d39a695659c8": {
+      "bodyHash": "276bf1d355227f9287c9dac4fb001664da3b21cc81ebaf38265737ba61119d74",
+      "createdAt": 1791675351568,
+      "data": {
+        "id": "tkt_0001",
+        "email": "naveenraj252005@gmail.com",
+        "title": "Checkout page is down #458",
+        "description": "Customers cannot pay, urgent fix needed.",
+        "category": "billing",
+        "affectedUsers": 150,
+        "score": 70,
+        "priority": "high",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 20,
+          "keywords": 30,
+          "audience": 20,
+          "matchedKeywords": [
+            "urgent",
+            "down"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T03:35:51.568Z",
+        "notification": "sent",
+        "createdAt": "2026-10-10T23:35:51.568Z",
+        "updatedAt": "2026-10-10T23:35:51.882Z"
+      }
+    },
+    "e18997e4d1328214d3f2068243cbb7eb3b4d6223b9e7af6311f13f95b7f4742e": {
+      "bodyHash": "e829cb38625f5aa3c72b9ad21f6f264a5fe806c14f8faa84ff7d85dc91c8c3ff",
+      "createdAt": 1791675359509,
+      "data": {
+        "id": "tkt_0003",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv318z41 b",
+        "description": "Automatic self-check ticket chkmv318z41. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-13T23:35:59.509Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:35:59.509Z",
+        "updatedAt": "2026-10-10T23:35:59.509Z"
+      }
+    },
+    "24ea7ecf6edf229019890906987d2edba9ec5255baf62a9a88c8b38f70c90f18": {
+      "bodyHash": "a8f08bc40a0316fbdccbfbba09020a09afb9c11f633b14321229b672313df092",
+      "createdAt": 1791675434935,
+      "data": {
+        "id": "tkt_0004",
+        "email": "manoj@gmail.com",
+        "title": "Checkout page is down #367",
+        "description": "Customers cannot pay, urgent fix needed.",
+        "category": "security",
+        "affectedUsers": 500,
+        "score": 95,
+        "priority": "critical",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 45,
+          "keywords": 30,
+          "audience": 20,
+          "matchedKeywords": [
+            "urgent",
+            "down"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T00:37:14.935Z",
+        "notification": "sent",
+        "createdAt": "2026-10-10T23:37:14.935Z",
+        "updatedAt": "2026-10-10T23:37:15.246Z"
+      }
+    },
+    "0041cd900471855da90b8cb8f770bff3da9772508e24606d267a3f000a6c0be7": {
+      "bodyHash": "d2d9e42b035d17567a58751b3c2e587ecfa9e3bd60d346cb9625c6a74c17f9f7",
+      "createdAt": 1791675456506,
+      "data": {
+        "id": "tkt_0005",
+        "email": "asha@example.com",
+        "title": "Checkout page is down #709",
+        "description": "Customers cannot pay, urgent fix needed.",
+        "category": "outage",
+        "affectedUsers": 150,
+        "score": 90,
+        "priority": "critical",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 40,
+          "keywords": 30,
+          "audience": 20,
+          "matchedKeywords": [
+            "urgent",
+            "down"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T00:37:36.506Z",
+        "notification": "sent",
+        "createdAt": "2026-10-10T23:37:36.506Z",
+        "updatedAt": "2026-10-10T23:37:36.822Z"
+      }
+    },
+    "6945571f8c4ba42902c4c271915dacb96c5e1a0a21dd758557b588c45d2101a7": {
+      "bodyHash": "4cc2efcde8bde085efbf33b83b9e52140e1c733a01eb4dfb89cbfc7c32239fc5",
+      "createdAt": 1791675685860,
+      "data": {
+        "id": "tkt_0007",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv31fyws b",
+        "description": "Automatic self-check ticket chkmv31fyws. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-13T23:41:25.861Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:41:25.861Z",
+        "updatedAt": "2026-10-10T23:41:25.861Z"
+      }
+    },
+    "40e8b07d125c82570e3d7fa30a167b94e5ad444b5bcc3a65246d60c062d7a278": {
+      "bodyHash": "c9f2ac14eab077064e445a080fa0135dadfb2a7335878fb273353270e3da0f0d",
+      "createdAt": 1791675791934,
+      "data": {
+        "id": "tkt_0008",
+        "email": "asha@example.com",
+        "title": "Checkout page is down",
+        "description": "\"Customers cannot pay, urgent fix needed.\"",
+        "category": "outage",
+        "affectedUsers": 150,
+        "score": 90,
+        "priority": "critical",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 40,
+          "keywords": 30,
+          "audience": 20,
+          "matchedKeywords": [
+            "urgent",
+            "down"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T00:43:11.934Z",
+        "notification": "queued",
+        "createdAt": "2026-10-10T23:43:11.934Z",
+        "updatedAt": "2026-10-10T23:43:12.249Z"
+      }
+    },
+    "dce4b64550ae23c5982deb16c2d70564c3e42f5d54385375c8f9d793dfa72d4f": {
+      "bodyHash": "ac1e7f6c524a2b7e83e27ed60a630ef020cd9ba8475147b699ba6d590d618c23",
+      "createdAt": 1791675888155,
+      "data": {
+        "id": "tkt_0009",
+        "email": "ravi@example.com",
+        "title": "Possible data breach on admin panel",
+        "description": "Unknown IP downloaded the customer export file",
+        "category": "security",
+        "affectedUsers": 500,
+        "score": 80,
+        "priority": "critical",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 45,
+          "keywords": 15,
+          "audience": 20,
+          "matchedKeywords": [
+            "breach"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T00:44:48.155Z",
+        "notification": "queued",
+        "createdAt": "2026-10-10T23:44:48.155Z",
+        "updatedAt": "2026-10-10T23:44:48.467Z"
+      }
+    },
+    "a6ea4a600bc905fb66bea0222f4f9fa43945bdb1d1d4d8d8640e09690057c4a0": {
+      "bodyHash": "ee3aae4f2cfd2d789ecf20a0e14334bf452e774dfabfa5db0083cfd9c7f63532",
+      "createdAt": 1791675977257,
+      "data": {
+        "id": "tkt_0010",
+        "email": "meena@example.com",
+        "title": "Payment failed for annual plans",
+        "description": "Renewal charges are rejected for many customers today.",
+        "category": "billing",
+        "affectedUsers": 40,
+        "score": 45,
+        "priority": "medium",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 20,
+          "keywords": 15,
+          "audience": 10,
+          "matchedKeywords": [
+            "payment failed"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T23:46:17.257Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:46:17.257Z",
+        "updatedAt": "2026-10-10T23:46:17.257Z"
+      }
+    },
+    "2f6e2e2f2ac0b62c17fe7390f8ab3cf0d411b0628da5fed3a0dc4d5611eda366": {
+      "bodyHash": "0723ce233181ece023b8dd25c8b2c31af13507f5b2f9580935e1c665ccf7bacf",
+      "createdAt": 1791676053697,
+      "data": {
+        "id": "tkt_0011",
+        "email": "karan@example.com",
+        "title": "Customers cannot login with Google",
+        "description": "The Google sign-in button returns an error page.",
+        "category": "outage",
+        "affectedUsers": 26,
+        "score": 65,
+        "priority": "high",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 40,
+          "keywords": 15,
+          "audience": 10,
+          "matchedKeywords": [
+            "cannot login"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T03:47:33.697Z",
+        "notification": "queued",
+        "createdAt": "2026-10-10T23:47:33.697Z",
+        "updatedAt": "2026-10-10T23:47:34.016Z"
+      }
+    },
+    "a0a33066d9a5186c8d7e207ee19f76e58825c809a45c2a32556d67935b25714a": {
+      "bodyHash": "f43842a2ac6e8ecb5cb19b909208f520a343dc85c31ed627a724d06a31ee9f9a",
+      "createdAt": 1791676131638,
+      "data": {
+        "id": "tkt_0012",
+        "email": "divya@example.com",
+        "title": "Invoice shows wrong tax amount",
+        "description": "The GST line on invoice 4821 is calculated twice.",
+        "category": "billing",
+        "affectedUsers": 1,
+        "score": 20,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 20,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-13T23:48:51.638Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:48:51.638Z",
+        "updatedAt": "2026-10-10T23:48:51.638Z"
+      }
+    },
+    "86a6ff37a084496f1e3973e78ba11e039a337ece4b71e6f0578191860ebc6d55": {
+      "bodyHash": "d33461b597050fb7d6b0a56de0dc1a6fd8df5b56e1a2329d97b145f94b77f561",
+      "createdAt": 1791676455082,
+      "data": {
+        "id": "tkt_0013",
+        "email": "arjun@example.com",
+        "title": "Export button does nothing",
+        "description": "Clicking Export on the reports page has no effect in Chrome.",
+        "category": "bug",
+        "affectedUsers": 12,
+        "score": 25,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 10,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-13T23:54:15.082Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:54:15.082Z",
+        "updatedAt": "2026-10-10T23:54:15.082Z"
+      }
+    },
+    "f6b3f724fdccd8cbdce6675ec16c166ebd775b5f7446122193f1e8827159cfbb": {
+      "bodyHash": "740823dfad2ed4978e4e62b3c98fe7c4fafa4d51ce41973f1cebcf825201cd4f",
+      "createdAt": 1791676516201,
+      "data": {
+        "id": "tkt_0015",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv31xrmq b",
+        "description": "Automatic self-check ticket chkmv31xrmq. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-13T23:55:16.201Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:55:16.201Z",
+        "updatedAt": "2026-10-10T23:55:16.201Z"
+      }
+    },
+    "d90b5006242ff620fa5c21a9a0fcfb36468cd2e58902b0d59c1af0d375123665": {
+      "bodyHash": "5adad3855ff52ca83ae7f2348f898e0978dd1fd0f40661ede5fcef92e656e447",
+      "createdAt": 1791676523306,
+      "data": {
+        "id": "tkt_0017",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv31xx49 b",
+        "description": "Automatic self-check ticket chkmv31xx49. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-13T23:55:23.306Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:55:23.306Z",
+        "updatedAt": "2026-10-10T23:55:23.306Z"
+      }
+    },
+    "36d047f2ba489e4fb89b601dc9ba596fbd2b7453676f721913760a522f03bf1e": {
+      "bodyHash": "9083b97c7ea083c79748991029f1fdf5e7220656f42c963a86ad91094b5a1df8",
+      "createdAt": 1791676560028,
+      "data": {
+        "id": "tkt_0018",
+        "email": "naveen@example.com",
+        "title": "Export button does nothing",
+        "description": "Clicking Export on the reports page has no effect in Chrome.",
+        "category": "bug",
+        "affectedUsers": 10000,
+        "score": 35,
+        "priority": "medium",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 20,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T23:56:00.028Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:56:00.028Z",
+        "updatedAt": "2026-10-10T23:56:00.028Z"
+      }
+    },
+    "466077e7d4511c2094cb920460f6431b1bf93fd05a924a6822ef59f16284ced7": {
+      "bodyHash": "da40f396b7d560c24283a6b97c765a8a70d2e6f693b949072446f395f6d4b104",
+      "createdAt": 1791676566356,
+      "data": {
+        "id": "tkt_0020",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv31yubx b",
+        "description": "Automatic self-check ticket chkmv31yubx. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-13T23:56:06.356Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:56:06.356Z",
+        "updatedAt": "2026-10-10T23:56:06.356Z"
+      }
+    },
+    "c4a5c514cc6369345842364202d15a20b5841d98c68373275cc8c148f49af081": {
+      "bodyHash": "29f80ff6f502877484b81267dff4a7b09a8d7ec4c0cb264b33e50afa5e548e79",
+      "createdAt": 1791676594863,
+      "data": {
+        "id": "tkt_0022",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv31zgby b",
+        "description": "Automatic self-check ticket chkmv31zgby. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-13T23:56:34.863Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-10T23:56:34.863Z",
+        "updatedAt": "2026-10-10T23:56:34.863Z"
+      }
+    },
+    "66816cf6183283f03e67754bc0fb732c0d896beffd1f2ebd3222fd238404cee0": {
+      "bodyHash": "0bc9cb001be3f3146f761800f09952c7e355cb93f916a424edcd0b7204419743",
+      "createdAt": 1791678273461,
+      "data": {
+        "id": "tkt_0023",
+        "email": "raj@example.com",
+        "title": "Checkout page is down",
+        "description": "Customers cannot pay, urgent fix needed.",
+        "category": "billing",
+        "affectedUsers": 500,
+        "score": 70,
+        "priority": "high",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 20,
+          "keywords": 30,
+          "audience": 20,
+          "matchedKeywords": [
+            "urgent",
+            "down"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T04:24:33.461Z",
+        "notification": "sent",
+        "createdAt": "2026-10-11T00:24:33.461Z",
+        "updatedAt": "2026-10-11T00:24:33.773Z"
+      }
+    },
+    "33981fd9d387016c8db083767ab0ac1d9aad49e2617f0f03ae3550c968a86a7a": {
+      "bodyHash": "48012d0c2f970be0d126f94da13bc995d125d423bead7b4741d9f4b5c23610f5",
+      "createdAt": 1791678305202,
+      "data": {
+        "id": "tkt_0025",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv33040w b",
+        "description": "Automatic self-check ticket chkmv33040w. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-14T00:25:05.202Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-11T00:25:05.202Z",
+        "updatedAt": "2026-10-11T00:25:05.202Z"
+      }
+    },
+    "0b8de7cbd3fbeac197f6db3bd37f43549125b5a1b69732f67413e6a832832221": {
+      "bodyHash": "cfadddcdb7abd368ea3c9ff56a2003a2bfd5c416e5d9f5033d95667091fffa7f",
+      "createdAt": 1791678310428,
+      "data": {
+        "id": "tkt_0027",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv33082l b",
+        "description": "Automatic self-check ticket chkmv33082l. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-14T00:25:10.428Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-11T00:25:10.428Z",
+        "updatedAt": "2026-10-11T00:25:10.428Z"
+      }
+    },
+    "37a7115d5123c190c3ed11f5ff275828c63539318211c2cf95dd5faeedbe0e39": {
+      "bodyHash": "86a1ed4d3e074ec7868dac26e4c9e085daa2c4927a0b1404c25e3365a1901c41",
+      "createdAt": 1791678326245,
+      "data": {
+        "id": "tkt_0028",
+        "email": "raj@example.com",
+        "title": "Checkout page is down",
+        "description": "Customers cannot pay, urgent fix needed.",
+        "category": "bug",
+        "affectedUsers": 500,
+        "score": 65,
+        "priority": "high",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 30,
+          "audience": 20,
+          "matchedKeywords": [
+            "urgent",
+            "down"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T04:25:26.245Z",
+        "notification": "sent",
+        "createdAt": "2026-10-11T00:25:26.245Z",
+        "updatedAt": "2026-10-11T00:25:26.556Z"
+      }
+    },
+    "4fe07b9ab75bfa0dcc819e2df59956feb152e955f9263430fa273224915021a2": {
+      "bodyHash": "b2d1e1192291d32835982cf5f176143a3a11918598ab690000f15e2a7ec18ddf",
+      "createdAt": 1791678340150,
+      "data": {
+        "id": "tkt_0029",
+        "email": "12@example.com",
+        "title": "Checkout page is down",
+        "description": "Customers cannot pay, urgent fix needed.",
+        "category": "billing",
+        "affectedUsers": 500,
+        "score": 70,
+        "priority": "high",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 20,
+          "keywords": 30,
+          "audience": 20,
+          "matchedKeywords": [
+            "urgent",
+            "down"
+          ]
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-11T04:25:40.150Z",
+        "notification": "sent",
+        "createdAt": "2026-10-11T00:25:40.150Z",
+        "updatedAt": "2026-10-11T00:25:40.469Z"
+      }
+    },
+    "7cbf8546ef424fe18077de83fe04d23db4eeacb4e3531b7004d165ea38dd6ab3": {
+      "bodyHash": "f17c9a237797a85629b947b2f26644db6f202f9d7ab7a39a566274331b7cdf47",
+      "createdAt": 1791678345821,
+      "data": {
+        "id": "tkt_0031",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv330zdy b",
+        "description": "Automatic self-check ticket chkmv330zdy. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-14T00:25:45.821Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-11T00:25:45.821Z",
+        "updatedAt": "2026-10-11T00:25:45.821Z"
+      }
+    },
+    "c8fd327eba962e8457fa4bf81961d46df63a9aedf5776913e40cecc70dd13817": {
+      "bodyHash": "3128c59a9a51d8b9d35b7c10b4e343e0920f943b239435604e8d5a844351016d",
+      "createdAt": 1791678370076,
+      "data": {
+        "id": "tkt_0033",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv331i3q b",
+        "description": "Automatic self-check ticket chkmv331i3q. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-14T00:26:10.076Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-11T00:26:10.076Z",
+        "updatedAt": "2026-10-11T00:26:10.076Z"
+      }
+    },
+    "5bc25bd58c38e2dacf0e0f76b449a0011c46cf515e904d7420525b164056d8f7": {
+      "bodyHash": "a95c926b5e374a5c212905fac0b1b7b837b10c32d68f3a1c65622d069c68b861",
+      "createdAt": 1791678516143,
+      "data": {
+        "id": "tkt_0035",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv334mt2 b",
+        "description": "Automatic self-check ticket chkmv334mt2. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-14T00:28:36.143Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-11T00:28:36.143Z",
+        "updatedAt": "2026-10-11T00:28:36.143Z"
+      }
+    },
+    "de839934903fb32f0ce869de608108f81e1ccd85c283d422a4954fa52450217f": {
+      "bodyHash": "b4d44cdc02829d5271a1a3f1fb0484b15cbc29de59c0eef9dbae99c02bed7aac",
+      "createdAt": 1791678562662,
+      "data": {
+        "id": "tkt_0037",
+        "email": "selfcheck@example.com",
+        "title": "Self-check ticket chkmv335mp3 b",
+        "description": "Automatic self-check ticket chkmv335mp3. Safe to delete.",
+        "category": "bug",
+        "affectedUsers": 5,
+        "score": 15,
+        "priority": "low",
+        "priorityOverridden": false,
+        "scoreBreakdown": {
+          "category": 15,
+          "keywords": 0,
+          "audience": 0,
+          "matchedKeywords": []
+        },
+        "status": "open",
+        "assignee": null,
+        "slaDueAt": "2026-10-14T00:29:22.662Z",
+        "notification": "not_required",
+        "createdAt": "2026-10-11T00:29:22.662Z",
+        "updatedAt": "2026-10-11T00:29:22.662Z"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "files.eol": "\n",
+  "files.exclude": { "**/.git": true },
+  "rest-client.followredirect": true
+}

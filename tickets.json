@@ -1,0 +1,482 @@
+{
+  "nextId": 38,
+  "nextCommentId": 14,
+  "tickets": [
+    {
+      "id": "tkt_0008",
+      "email": "asha@example.com",
+      "title": "Checkout page is down",
+      "description": "\"Customers cannot pay, urgent fix needed.\"",
+      "category": "outage",
+      "affectedUsers": 150,
+      "score": 90,
+      "priority": "critical",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 40,
+        "keywords": 30,
+        "audience": 20,
+        "matchedKeywords": [
+          "urgent",
+          "down"
+        ]
+      },
+      "status": "resolved",
+      "assignee": null,
+      "slaDueAt": "2026-10-11T00:43:11.934Z",
+      "notification": "sent",
+      "createdAt": "2026-10-10T23:43:11.934Z",
+      "updatedAt": "2026-10-11T00:29:09.956Z"
+    },
+    {
+      "id": "tkt_0009",
+      "email": "ravi@example.com",
+      "title": "Possible data breach on admin panel",
+      "description": "Unknown IP downloaded the customer export file",
+      "category": "security",
+      "affectedUsers": 500,
+      "score": 80,
+      "priority": "critical",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 45,
+        "keywords": 15,
+        "audience": 20,
+        "matchedKeywords": [
+          "breach"
+        ]
+      },
+      "status": "open",
+      "assignee": null,
+      "slaDueAt": "2026-10-11T00:44:48.155Z",
+      "notification": "sent",
+      "createdAt": "2026-10-10T23:44:48.155Z",
+      "updatedAt": "2026-10-11T00:24:34.399Z"
+    },
+    {
+      "id": "tkt_0010",
+      "email": "meena@example.com",
+      "title": "Payment failed for annual plans",
+      "description": "Renewal charges are rejected for many customers today.",
+      "category": "billing",
+      "affectedUsers": 40,
+      "score": 45,
+      "priority": "medium",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 20,
+        "keywords": 15,
+        "audience": 10,
+        "matchedKeywords": [
+          "payment failed"
+        ]
+      },
+      "status": "open",
+      "assignee": null,
+      "slaDueAt": "2026-10-11T23:46:17.257Z",
+      "notification": "not_required",
+      "createdAt": "2026-10-10T23:46:17.257Z",
+      "updatedAt": "2026-10-10T23:46:17.257Z"
+    },
+    {
+      "id": "tkt_0011",
+      "email": "karan@example.com",
+      "title": "Customers cannot login with Google",
+      "description": "The Google sign-in button returns an error page.",
+      "category": "outage",
+      "affectedUsers": 26,
+      "score": 65,
+      "priority": "high",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 40,
+        "keywords": 15,
+        "audience": 10,
+        "matchedKeywords": [
+          "cannot login"
+        ]
+      },
+      "status": "in_progress",
+      "assignee": null,
+      "slaDueAt": "2026-10-11T03:47:33.697Z",
+      "notification": "sent",
+      "createdAt": "2026-10-10T23:47:33.697Z",
+      "updatedAt": "2026-10-11T00:29:00.599Z"
+    },
+    {
+      "id": "tkt_0012",
+      "email": "divya@example.com",
+      "title": "Invoice shows wrong tax amount",
+      "description": "The GST line on invoice 4821 is calculated twice.",
+      "category": "billing",
+      "affectedUsers": 1,
+      "score": 20,
+      "priority": "low",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 20,
+        "keywords": 0,
+        "audience": 0,
+        "matchedKeywords": []
+      },
+      "status": "open",
+      "assignee": null,
+      "slaDueAt": "2026-10-13T23:48:51.638Z",
+      "notification": "not_required",
+      "createdAt": "2026-10-10T23:48:51.638Z",
+      "updatedAt": "2026-10-10T23:48:51.638Z"
+    },
+    {
+      "id": "tkt_0013",
+      "email": "arjun@example.com",
+      "title": "Export button does nothing",
+      "description": "Clicking Export on the reports page has no effect in Chrome.",
+      "category": "bug",
+      "affectedUsers": 12,
+      "score": 25,
+      "priority": "low",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 15,
+        "keywords": 0,
+        "audience": 10,
+        "matchedKeywords": []
+      },
+      "status": "open",
+      "assignee": null,
+      "slaDueAt": "2026-10-13T23:54:15.082Z",
+      "notification": "not_required",
+      "createdAt": "2026-10-10T23:54:15.082Z",
+      "updatedAt": "2026-10-10T23:54:15.082Z"
+    },
+    {
+      "id": "tkt_0018",
+      "email": "naveen@example.com",
+      "title": "Export button does nothing",
+      "description": "Clicking Export on the reports page has no effect in Chrome.",
+      "category": "bug",
+      "affectedUsers": 10000,
+      "score": 35,
+      "priority": "medium",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 15,
+        "keywords": 0,
+        "audience": 20,
+        "matchedKeywords": []
+      },
+      "status": "open",
+      "assignee": null,
+      "slaDueAt": "2026-10-11T23:56:00.028Z",
+      "notification": "not_required",
+      "createdAt": "2026-10-10T23:56:00.028Z",
+      "updatedAt": "2026-10-10T23:56:00.028Z"
+    },
+    {
+      "id": "tkt_0023",
+      "email": "raj@example.com",
+      "title": "Checkout page is down",
+      "description": "Customers cannot pay, urgent fix needed.",
+      "category": "billing",
+      "affectedUsers": 500,
+      "score": 70,
+      "priority": "high",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 20,
+        "keywords": 30,
+        "audience": 20,
+        "matchedKeywords": [
+          "urgent",
+          "down"
+        ]
+      },
+      "status": "open",
+      "assignee": null,
+      "slaDueAt": "2026-10-11T04:24:33.461Z",
+      "notification": "sent",
+      "createdAt": "2026-10-11T00:24:33.461Z",
+      "updatedAt": "2026-10-11T00:24:33.773Z"
+    },
+    {
+      "id": "tkt_0028",
+      "email": "raj@example.com",
+      "title": "Checkout page is down",
+      "description": "Customers cannot pay, urgent fix needed.",
+      "category": "bug",
+      "affectedUsers": 500,
+      "score": 65,
+      "priority": "high",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 15,
+        "keywords": 30,
+        "audience": 20,
+        "matchedKeywords": [
+          "urgent",
+          "down"
+        ]
+      },
+      "status": "open",
+      "assignee": null,
+      "slaDueAt": "2026-10-11T04:25:26.245Z",
+      "notification": "sent",
+      "createdAt": "2026-10-11T00:25:26.245Z",
+      "updatedAt": "2026-10-11T00:25:26.556Z"
+    },
+    {
+      "id": "tkt_0029",
+      "email": "12@example.com",
+      "title": "Checkout page is down",
+      "description": "Customers cannot pay, urgent fix needed.",
+      "category": "billing",
+      "affectedUsers": 500,
+      "score": 70,
+      "priority": "high",
+      "priorityOverridden": false,
+      "scoreBreakdown": {
+        "category": 20,
+        "keywords": 30,
+        "audience": 20,
+        "matchedKeywords": [
+          "urgent",
+          "down"
+        ]
+      },
+      "status": "resolved",
+      "assignee": "Devloper Check it",
+      "slaDueAt": "2026-10-11T04:25:40.150Z",
+      "notification": "sent",
+      "createdAt": "2026-10-11T00:25:40.150Z",
+      "updatedAt": "2026-10-11T00:28:40.233Z"
+    }
+  ],
+  "history": {
+    "tkt_0008": [
+      {
+        "at": "2026-10-10T23:43:11.934Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 90,
+          "priority": "critical"
+        }
+      },
+      {
+        "at": "2026-10-10T23:43:12.249Z",
+        "event": "notification_queued",
+        "actor": "system",
+        "details": {}
+      },
+      {
+        "at": "2026-10-11T00:24:34.086Z",
+        "event": "notification_delivered_from_queue",
+        "actor": "system",
+        "details": {}
+      },
+      {
+        "at": "2026-10-11T00:29:09.956Z",
+        "event": "status_changed",
+        "actor": "admin",
+        "details": {
+          "from": "open",
+          "to": "resolved"
+        }
+      }
+    ],
+    "tkt_0009": [
+      {
+        "at": "2026-10-10T23:44:48.155Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 80,
+          "priority": "critical"
+        }
+      },
+      {
+        "at": "2026-10-10T23:44:48.467Z",
+        "event": "notification_queued",
+        "actor": "system",
+        "details": {}
+      },
+      {
+        "at": "2026-10-11T00:24:34.399Z",
+        "event": "notification_delivered_from_queue",
+        "actor": "system",
+        "details": {}
+      }
+    ],
+    "tkt_0010": [
+      {
+        "at": "2026-10-10T23:46:17.257Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 45,
+          "priority": "medium"
+        }
+      }
+    ],
+    "tkt_0011": [
+      {
+        "at": "2026-10-10T23:47:33.697Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 65,
+          "priority": "high"
+        }
+      },
+      {
+        "at": "2026-10-10T23:47:34.016Z",
+        "event": "notification_queued",
+        "actor": "system",
+        "details": {}
+      },
+      {
+        "at": "2026-10-11T00:24:34.709Z",
+        "event": "notification_delivered_from_queue",
+        "actor": "system",
+        "details": {}
+      },
+      {
+        "at": "2026-10-11T00:29:00.599Z",
+        "event": "status_changed",
+        "actor": "admin",
+        "details": {
+          "from": "open",
+          "to": "in_progress"
+        }
+      }
+    ],
+    "tkt_0012": [
+      {
+        "at": "2026-10-10T23:48:51.638Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 20,
+          "priority": "low"
+        }
+      }
+    ],
+    "tkt_0013": [
+      {
+        "at": "2026-10-10T23:54:15.082Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 25,
+          "priority": "low"
+        }
+      }
+    ],
+    "tkt_0018": [
+      {
+        "at": "2026-10-10T23:56:00.028Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 35,
+          "priority": "medium"
+        }
+      }
+    ],
+    "tkt_0023": [
+      {
+        "at": "2026-10-11T00:24:33.461Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 70,
+          "priority": "high"
+        }
+      },
+      {
+        "at": "2026-10-11T00:24:33.773Z",
+        "event": "notification_sent",
+        "actor": "system",
+        "details": {}
+      }
+    ],
+    "tkt_0028": [
+      {
+        "at": "2026-10-11T00:25:26.245Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 65,
+          "priority": "high"
+        }
+      },
+      {
+        "at": "2026-10-11T00:25:26.556Z",
+        "event": "notification_sent",
+        "actor": "system",
+        "details": {}
+      }
+    ],
+    "tkt_0029": [
+      {
+        "at": "2026-10-11T00:25:40.150Z",
+        "event": "created",
+        "actor": "admin",
+        "details": {
+          "score": 70,
+          "priority": "high"
+        }
+      },
+      {
+        "at": "2026-10-11T00:25:40.469Z",
+        "event": "notification_sent",
+        "actor": "system",
+        "details": {}
+      },
+      {
+        "at": "2026-10-11T00:26:19.605Z",
+        "event": "status_changed",
+        "actor": "admin",
+        "details": {
+          "from": "open",
+          "to": "in_progress"
+        }
+      },
+      {
+        "at": "2026-10-11T00:27:30.748Z",
+        "event": "comment_added",
+        "actor": "admin",
+        "details": {}
+      },
+      {
+        "at": "2026-10-11T00:27:58.150Z",
+        "event": "assignee_changed",
+        "actor": "admin",
+        "details": {
+          "from": null,
+          "to": "Devloper Check it"
+        }
+      },
+      {
+        "at": "2026-10-11T00:28:40.233Z",
+        "event": "status_changed",
+        "actor": "admin",
+        "details": {
+          "from": "in_progress",
+          "to": "resolved"
+        }
+      }
+    ]
+  },
+  "comments": {
+    "tkt_0029": [
+      {
+        "id": "cmt_0011",
+        "ticketId": "tkt_0029",
+        "text": "after 5 min it will be resolved 😊",
+        "author": "admin",
+        "createdAt": "2026-10-11T00:27:30.748Z"
+      }
+    ]
+  }
+}
